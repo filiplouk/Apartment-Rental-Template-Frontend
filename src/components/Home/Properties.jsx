@@ -16,7 +16,7 @@ function Properties(){
          <span class="visually-hidden">Loading...</span>
       </div>)
     :(houses.properties.map((value,key)=>{
-      let source = "./images/"+value._id+".jpg";
+      let source = process.env.PUBLIC_URL+"/images/"+value._id+".jpg";
       return(
         <div className="properties">
           <div className="row property">
