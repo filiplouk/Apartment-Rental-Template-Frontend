@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-size: 1.7rem;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+//Colors
+$main-grey-color:#6d6b6e;
+
+//Header
+.navbar{
+    background-color:white;
+    font-size: 2rem;
+    font-family: 'Comfortaa', cursive;
+    margin:1% auto 5% auto;
+    .navbar-brand{
+        font-size: 2.6rem;
+        margin-right: 40%;
+        margin-left: 5%;
+    }
+    .nav-link{
+        margin-right:40%;
+    }
+}
+//
+
+
+
+//Filters
+
+.filters{
+    margin-left:25%;
+    width: 50%;
+    padding-top: 5%;
+ 
+    .filters-box{
+        margin-bottom:25%;
+        color:$main-grey-color;
+        .filters-box__heading{
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin-bottom: 7%;
+        }
+        .filters-box__content{
+            font-size:1.6rem;
+            margin-left: 3%;
+            input.range{
+                margin: 2% 4%;
+                width: 30%;
+                text-align: center;
+            }
+        }
+    }
+    
+}
+//
+
+//Properties
+
+//spinner while loading
+.spinner-grow{
+   position: absolute;
+   left:70%;
+   top:50%;
+}
+//
+.properties{
+    margin-left: 10%;
+    .property{
+        margin-bottom: 7%;
+        
+        .property-image{
+            padding: 0;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        .property-card{
+            padding-left:11%;
+            padding-top: 1%;
+            background-image: linear-gradient(to right,lighten(#f8f8f8,3%),#f8f8f8);
+            color:$main-grey-color;
+            position: relative;
+            .property-card__heading{
+              font-size: 1.7rem;
+              text-transform: uppercase;
+            }
+            .property-card__details{
+              font-size: 1.7rem;
+              margin-top: 3%;
+              line-height: 0.8;
+              font-weight: 300;
+            }
+            .property-card__price{
+              font-size: 1.9rem;
+              font-weight: 600;
+              position: absolute;
+              bottom:0;
+              .price-month{
+                font-size: 1.5rem;
+                font-weight: 400;
+              }
+            }
+        }
+       
+    }
+
+}
+//
+
+//General CSS for input forms in Delete and Add Property
+@mixin inputGeneralStyle {
+    font-size: 1.9rem;
+    color:$main-grey-color;
+    padding-bottom: 15%;
+    width:23%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    label{
+        margin-bottom: 3%;
+    }
+    @media screen and (max-width: 992px) {
+        width:60%;
+    }
+}
+
+//General CSS for button in input forms in Delete and Add Property
+
+@mixin inputSubmitButton{
+    button{
+        width: 100px;
+        font-size: 1.7rem;
+        text-transform:uppercase;
+        border-style: none;
+        border-radius: 4px;
+        margin-top: 5%;
+        color:#fff;
+        background-color:$main-grey-color;
+        &:hover{
+            background-color: lighten($main-grey-color,10%)
+        }
+        
+    }
+}
+
+//Add New Property Page
+.add-property{
+    @include inputGeneralStyle();
+    .add-property-heading{
+        font-size: 3rem;
+        margin-bottom: 15%;
+    }
+    .add-property-name{
+        margin-bottom: 7%;
+    }
+    .add-property-rooms{
+        margin-bottom:7% ;
+    }
+    .add-property-button{
+        @include inputSubmitButton();
+    }
+    
+}
+//
+
+//Delete Property
+.delete-property{
+    @include inputGeneralStyle();
+    .delete-property-heading{
+        font-size: 3rem;
+        margin-bottom: 15%;
+    }
+    .delete-property-name{
+        margin-bottom: 7%;
+    }
+    .delete-property-rooms{
+        margin-bottom:7% ;
+    }
+    .delete-property-button{
+        @include inputSubmitButton();
+    }
+}
+//
+
+//Footer
+
+footer{
+     color:$main-grey-color;
+     text-align: center;
+     margin: 3% auto 1% auto;
+     font-size: 1.7rem;
+}
+
+//
+
+// Make the Font Responsive
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 50%;
+    }
+    
+}
+//
+
+
+
