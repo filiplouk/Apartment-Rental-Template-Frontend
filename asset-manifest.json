@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Intership-Project-Frontend/static/css/main.3823161d.css",
-    "main.js": "/Intership-Project-Frontend/static/js/main.20ecc7ce.js",
+    "main.js": "/Intership-Project-Frontend/static/js/main.014a0928.js",
     "index.html": "/Intership-Project-Frontend/index.html",
     "main.3823161d.css.map": "/Intership-Project-Frontend/static/css/main.3823161d.css.map",
-    "main.20ecc7ce.js.map": "/Intership-Project-Frontend/static/js/main.20ecc7ce.js.map"
+    "main.014a0928.js.map": "/Intership-Project-Frontend/static/js/main.014a0928.js.map"
   },
   "entrypoints": [
     "static/css/main.3823161d.css",
-    "static/js/main.20ecc7ce.js"
+    "static/js/main.014a0928.js"
   ]
 }
