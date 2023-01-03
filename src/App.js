@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter,Routes, Route } from 'react-router-dom';
+import { HashRouter,Routes, Route } from 'react-router-dom';
 import './App.scss'
 
 import Home from "./components/Home/Home";
@@ -10,7 +10,7 @@ import DeleteProperty from './components/DeleteProperty/DeleteProperty.jsx';
 function App() {
 
   return (
-    <HashRouter>
+    <HashRouter basename='/Intership-Project-Frontend'>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/add_property" element={<AddProperty />} />
