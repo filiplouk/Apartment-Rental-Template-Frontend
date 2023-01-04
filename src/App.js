@@ -10,7 +10,7 @@ import DeleteProperty from './components/DeleteProperty/DeleteProperty.jsx';
 function App() {
 
   return (
-    <BrowserRouter >
+    <BrowserRouter basename='/Intership-Project-Frontend'>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/add_property" element={<AddProperty />} />
