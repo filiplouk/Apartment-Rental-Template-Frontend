@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter basename='/Intership-Project-Frontend'>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/add_property" element={<AddProperty />} />
         <Route path="/delete_property" element={<DeleteProperty />} />
       </Routes>
