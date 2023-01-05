@@ -18,27 +18,27 @@ function Filters(){
        <div className="col-12 filters-box">
          <h2 className="filters-box__heading">Type</h2>
          <div className="filters-box__content">
-            <div class="form-check mb-3">
-             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
-             <label class="form-check-label" for="flexCheckDefault">
+            <div className="form-check mb-3">
+             <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
+             <label className="form-check-label" for="flexCheckDefault">
                 Entire Apartment
              </label>
             </div>
-            <div class="form-check mb-3">
-             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
-             <label class="form-check-label" for="flexCheckDefault">
+            <div className="form-check mb-3">
+             <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
+             <label className="form-check-label" for="flexCheckDefault">
                 Private Room
              </label>
             </div>
-            <div class="form-check mb-3">
-             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
-             <label class="form-check-label" for="flexCheckDefault">
+            <div className="form-check mb-3">
+             <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
+             <label className="form-check-label" for="flexCheckDefault">
                 Shared Room
              </label>
             </div>
-            <div class="form-check mb-3">
-             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
-             <label class="form-check-label" for="flexCheckDefault">
+            <div className="form-check mb-3">
+             <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>
+             <label className="form-check-label" for="flexCheckDefault">
                 Student Campus
              </label>
             </div>

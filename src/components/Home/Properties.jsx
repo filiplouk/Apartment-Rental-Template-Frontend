@@ -5,9 +5,16 @@ import PropertyCard from "./PropertyCard";
 function Properties(){
   const [houses, setHouses]= useState({});
   useEffect(()=> {
-   fetch("/properties")
+   fetch("/properties", {
+    method: 'GET',
+    headers: {
+    "Accept": "application/json",
+    'Content-Type': 'application/json'
+    }
+    })
    .then(response => response.json())
    .then(data => setHouses(data))
+   .catch(err => console.log(err))
   },[])
   return (
     <div>
