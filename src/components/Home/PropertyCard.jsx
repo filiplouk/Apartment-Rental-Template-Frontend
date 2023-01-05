@@ -34,7 +34,9 @@ function PropertyCard(props){
 
            })}
         </div>
-        <h3 className="property-card__price">$400<span className="price-month"> /month</span></h3>
+        <div className="property-card__price">
+           <h3 >$400<span className="price-month"> /month</span></h3>
+        </div>
         
     </div>
   )

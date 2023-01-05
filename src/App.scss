@@ -103,7 +103,7 @@ $main-grey-color:#6d6b6e;
               line-height: 0.8;
               font-weight: 300;
             }
-            .property-card__price{
+            .property-card__price h3{
               font-size: 1.9rem;
               font-weight: 600;
               position: absolute;
@@ -207,9 +207,15 @@ footer{
 //
 
 // Make the Font Responsive
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
     html{
-        font-size: 50%;
+        font-size: 65%;
+    }
+    .property-card__details{
+        line-height: 1.2;
+    }
+    .property-card__price{
+        margin-top: 15%;
     }
     
 }
