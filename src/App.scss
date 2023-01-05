@@ -211,12 +211,18 @@ footer{
     html{
         font-size: 65%;
     }
+    // Make the Property Display responsive
     .property-card__details{
         line-height: 1.2;
     }
     .property-card__price{
         margin-top: 15%;
     }
+    .spinner-grow{
+        position: absolute;
+        left:50%;
+        top:50%;
+     }
     
 }
 //
