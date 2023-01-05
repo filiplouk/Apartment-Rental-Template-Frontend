@@ -15,7 +15,7 @@ function DeleteProperty(){
     }
     
     function PostDelete(){
-        fetch('/properties', {
+        fetch('https://gifted-fly-purse.cyclic.app/properties', {
             method: 'DELETE',
             body: JSON.stringify(property),
             headers: {

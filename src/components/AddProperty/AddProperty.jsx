@@ -41,7 +41,7 @@ function AddProperty() {
   }
   function PostProperty(){
     
-    fetch('/properties', {
+    fetch('https://gifted-fly-purse.cyclic.app/properties', {
       method: 'POST',
       body: JSON.stringify(property),
       headers: {
