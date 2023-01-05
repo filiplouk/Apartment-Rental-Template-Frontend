@@ -5,7 +5,7 @@ import PropertyCard from "./PropertyCard";
 function Properties(){
   const [houses, setHouses]= useState({});
   useEffect(()=> {
-   fetch("/properties", {
+   fetch("https://gifted-fly-purse.cyclic.app/properties", {
     method: 'GET',
     headers: {
     "Accept": "application/json",
