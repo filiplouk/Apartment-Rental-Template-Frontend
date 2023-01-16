@@ -1,14 +1,12 @@
-import React from 'react';
-import { BrowserRouter,Routes, Route } from 'react-router-dom';
-import './App.scss'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.scss";
 
 import Home from "./components/Home/Home";
-import AddProperty from './components/AddProperty/AddProperty';
-import DeleteProperty from './components/DeleteProperty/DeleteProperty.jsx';
-
+import AddProperty from "./components/AddProperty/AddProperty";
+import DeleteProperty from "./components/DeleteProperty/DeleteProperty.jsx";
 
 function App() {
-
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
@@ -17,7 +15,6 @@ function App() {
         <Route path="/delete_property" element={<DeleteProperty />} />
       </Routes>
     </BrowserRouter>
-
   );
 }
 
